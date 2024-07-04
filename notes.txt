@@ -1,0 +1,25 @@
+struttura: 
+[x] navbar al centro con varie sezioni
+[x] hero con loop dei lavori
+[x] grid bento box
+[x] skills in depth
+[x] NO work experience
+[x] chat bot da rendere più evidente magari con un bottone
+
+
+TO-DO: 
+[x] fare uno still di Piero
+[x] mettere illustrazione Lumi come splash 
+[] finire chatbot
+[x] fare le varie pagine con i progetti
+[x] fare contact form 
+[x] fare footer 
+[] rendere il text responsivo 
+[] fix probelma icone nell'hero come ho fatto per il document
+[] mettere il curriculum in inglese
+[] aggiungere animazioni on scroll perche' se no non siamo fighi abbastanza
+
+FEATURES THAT MIGHT BE COOL: 
+[] fare che ogni volta che hoveri su una skill ti viene fuori una specie
+    di icona/blocco che fa vedere dei progetti fatti li, sarebbe carino. 
+[x] aggiungere icona del document al download resume 

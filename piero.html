@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | PIERO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+    <link rel="stylesheet" href=".\style-pages.css" />
+    <link rel="icon" type="image/jpg" href=".\imgs\logo\FAVICON WHITE.png" />
+  </head>
+  <body>
+    <main>
+      <!--NAVBAR-->
+      <header>
+        <a href=".\index.html" class="logo-holder">
+          <div class="logo">
+            <img
+              src=".\imgs\logo\FAVICON BLACK.png"
+              alt="Caterina Viola logo"
+            />
+          </div>
+          <div class="logo-text">Caterina Viola</div>
+        </a>
+        <nav>
+          <ul id="menu">
+            <li>
+              <a href=".\lumi.html">Previous Project </a>
+            </li>
+            <li>
+              <a href=".\casa.html">Next Project</a>
+            </li>
+            <li>
+              <a href="#contact-section" class="contact-button">Contact me</a>
+            </li>
+          </ul>
+          <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="M5 7h14M5 12h14M5 17h14"
+              />
+            </svg>
+          </a>
+        </nav>
+      </header>
+
+      <!--PROJECT DESCRIPTION-->
+      <section class="projectdesc container">
+        <h2>PIERO</h2>
+        <div class="desc-green">
+          <div class="desc-info">
+            <h3>The short movie</h3>
+            <p>
+              "PIERO" is a 2.5D and 2D animated movie that talks about Piero, a
+              Math genius affected by Down Syndrome, that wants to participate
+              to his school's Math contest, even tho he cannot write nor talk
+              due to his disability.
+            </p>
+            <p>
+              This project is based on the true story of Piero Luigi Viola and
+              his best friends Mattia and Andrea.
+            </p>
+            <p>
+              The project was made as a thesis project for
+              <a href="https://www.naba.it/it"
+                >NABA - Nuova Accademia di Belle Arti</a
+              >
+            </p>
+          </div>
+          <div class="desc-skills">
+            <ul>
+              <li>Animation</li>
+              <li>Visual Development</li>
+              <li>Post Production</li>
+              <img src=".\imgs\logo\after-effects.png" alt="Python" />
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--BENTO SECTION-->
+      <section id="projects-section" class="bento">
+        <h2>Visuals</h2>
+        <div class="bento-grid">
+          <a href="#" class="bento-item">
+            <img
+              src=".\imgs\piero\bluey_ch_lineup.png"
+              alt="piero concept art"
+              width="100%"
+            />
+          </a>
+          <a href="#" class="bento-item">
+            <img
+              src=".\imgs\piero\scuola_giorno.png"
+              alt="piero concept art"
+              width="100%"
+            />
+          </a>
+          <a href="#" class="bento-item">
+            <img
+              src=".\imgs\piero\bluey_ch_comparse.png"
+              alt="piero concept art"
+              width="100%"
+            />
+          </a>
+          <a href="#" class="bento-item">
+            <img
+              src=".\imgs\piero\bluey_ch_piero_outfits.png"
+              alt="piero concept art"
+              width="100%"
+            />
+          </a>
+          <a href="#" class="bento-item">
+            <img
+              src=".\imgs\piero\scuola_notte.png"
+              alt="piero concept art"
+              width="100%"
+            />
+          </a>
+          <a href="#" class="bento-item">
+            <img
+              src=".\imgs\piero\scuola_pioggia.png"
+              alt="piero concept art"
+              width="100%"
+            />
+          </a>
+        </div>
+      </section>
+
+      <!--CONTACT FORM-->
+      <section id="contact-section" class="contact container">
+        <h2>Let's keep in touch!</h2>
+        <div class="contact-main">
+          <div class="contacts">
+            <h3>Send an email</h3>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="contact-form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="af3d2dde-c8bf-494b-bcaf-b6b814234ae8"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email address"
+              />
+              <input type="text" name="name" placeholder="Your name" />
+              <textarea
+                name="message"
+                placeholder="Say hi!"
+                class="email-text"
+              ></textarea>
+              <button type="submit" class="button white">Send</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>Alternatively</h3>
+            <p>
+              Send me an email to
+              <a href="mailto:Caterina_Viola00@proton.me"
+                >Caterina_Viola00@proton.me</a
+              >!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--SCRIPTS-->
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+      new kursor({
+        type: 4,
+        removeDefaultCursor: true,
+      });
+    </script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script defer src="./script.js"></script>
+  </body>
+</html>

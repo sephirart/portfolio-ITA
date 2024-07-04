@@ -7,14 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
     <link rel="icon" type="image/jpg" href="./imgs/logo/FAVICON WHITE.png" />
   </head>
   <body>
+    <!--NAVBAR-->
     <header>
       <a href="#" class="logo-holder">
         <div class="logo">
@@ -25,22 +32,21 @@
       <nav>
         <ul id="menu">
           <li>
-            <a href="#">Home</a>
+            <a href="#ai-section"
+              >AI
+              <span style="font-weight: bold; color: var(--base-800)">
+                NEW!</span
+              ></a
+            >
           </li>
           <li>
-            <a href="#">Visual Dev</a>
+            <a href="#projects-section">Projects</a>
           </li>
           <li>
-            <a href="#">Game Dev</a>
+            <a href="#skills-section">Skills</a>
           </li>
           <li>
-            <a href="#">Animation</a>
-          </li>
-          <li>
-            <a href="#">Concept Art</a>
-          </li>
-          <li>
-            <a href="#" class="contact-button">Contattami</a>
+            <a href="#contact-section" class="contact-button">Contact me</a>
           </li>
         </ul>
         <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();"
@@ -64,33 +70,64 @@
       </nav>
     </header>
     <main>
+      <!--WARNING-->
+      <!--
       <p class="warning">
         <img src="./imgs/logo/arrows.png" width="15" /> Sito in costruzione
       </p>
+        -->
+
+      <!--HERO SECTION-->
       <section class="hero container">
         <div class="hero-green">
           <div>
-            <h1><small>Ciao! Sono</small> Caterina Viola</h1>
-            <p>
-              Studentessa di animazione in NABA, appassionata di programmazione,
-              tanto da avere due certificazioni Harvard: Python e Cybersecurity.
+            <h1>Ciao! I'm Caterina Viola</h1>
+            <p class="description">
+              Pizza-loving animation graduate at NABA, passionate about
+              programming, so much so that I have two Harvard Certificates: CS50
+              Python and CS50 Cybersecurity.
               <span>
-                Il mio progetto di tesi "PIERO" parla di disabilità, inclusivity
-                e diversity, temi che mi stanno molto a cuore.</span
+                My thesis project "PIERO" talks about disability, inclusivity
+                and diversity, themes that I care a lot about.</span
               >
-              <!--</br>Domande? Chiedi al mio bot integrato con AzureAI di Microsoft!-->
             </p>
+
             <div class="call-to-action">
-              <a
-                href="#"
-                class="button white"
-                download="./Caterina Viola_ITA.pdf"
+              <a href="./Caterina Viola_ITA.pdf" class="button white"
                 >Curriculum Vitae</a
               >
-              <a href="mailto:Caterina_Viola00@proton.me" class="button"
-                >Contattami</a
-              >
+              <a href="#contact-section" class="contact button"
+                >Contact me
+                <lord-icon
+                  src="https://cdn.lordicon.com/wzrwaorf.json"
+                  trigger="hover"
+                  colors="primary:#242424,secondary:#242424"
+                >
+                </lord-icon>
+              </a>
             </div>
+            <p class="secondary-action">
+              Questions? Ask my
+              <a
+                href="#ai-section"
+                class="chatbot-ref"
+                style="position: relative"
+              >
+                AI Azure bot
+                <lord-icon
+                  src="https://cdn.lordicon.com/unukghxb.json"
+                  trigger="hover"
+                  colors="primary:#121331,secondary:#242424"
+                  style="
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: -2px;
+                  "
+                >
+                </lord-icon>
+              </a>
+            </p>
           </div>
         </div>
         <div class="hero-yellow">
@@ -101,6 +138,8 @@
           />
         </div>
       </section>
+
+      <!--LOGO SECTION-->
       <section class="logos container">
         <div class="marquee">
           <div class="track">
@@ -157,21 +196,263 @@
           </div>
         </div>
       </section>
-      <p class="warning">Progetti, AI bot e molto altro in arrivo!</p>
-      <!--
-      <section class="bento">
-        <h2>Progetti</h2>
+
+      <!--BENTO SECTION-->
+      <section id="projects-section" class="bento">
+        <h2>Projects</h2>
         <div class="bento-grid">
-          <div class="bento-item">casa</div>
-          <div class="bento-item">ghea</div>
-          <div class="bento-item">gioco</div>
-          <div class="bento-item">piero</div>
-          <div class="bento-item">illust</div>
-          <div class="bento-item">lumi</div>
+          <a href=".\casa.html" class="bento-item">
+            <img
+              src=".\imgs\casa\thumbnail_logo.png"
+              alt="House on the cerulean sea- visual development project"
+              width="100%"
+            />
+          </a>
+          <a href=".\terra.html" class="bento-item">
+            <img
+              src=".\imgs\ghea\splashart.png"
+              alt="Ghea - game visual development project"
+              width="100%"
+            />
+          </a>
+          <a href=".\gioco.html" class="bento-item">
+            <img
+              src=".\imgs\gioco\thumbnail.png"
+              alt="Corpse in Wonderland - visual novel game"
+              width="100%"
+            />
+          </a>
+          <a href=".\piero.html" class="bento-item">
+            <img
+              src=".\imgs\piero\splash.png"
+              alt="PIERO - 2.5D animation short movie"
+              width="100%"
+            />
+          </a>
+          <a href=".\daisy.html" class="bento-item">
+            <img
+              src=".\imgs\illustrations\daisy_splash.png"
+              alt="Illustrations"
+              width="100%"
+            />
+          </a>
+          <a href=".\lumi.html" class="bento-item">
+            <img
+              src=".\imgs\illustrations\lumi_concept.png"
+              alt="Lumi - character design and concept art project"
+              width="100%"
+            />
+          </a>
         </div>
       </section>
-      -->
-      <!-- aggiungere sezioni -->
+
+      <!--https://vendredi-society.com/ for inspo!-->
+
+      <!--ABOUT SECTION -->
+      <section id="skills-section" class="skills container">
+        <h2>Skills</h2>
+        <div class="holder-pink">
+          <div class="left-column">
+            <h3>
+              Frontend
+              <lord-icon
+                src="https://cdn.lordicon.com/xirobkro.json"
+                trigger="hover"
+                colors="primary:#242424,secondary:#242424"
+              >
+              </lord-icon>
+            </h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>React</li>
+            </ul>
+            <h3>
+              Animation<lord-icon
+                src="https://cdn.lordicon.com/wuvorxbv.json"
+                trigger="hover"
+                colors="primary:#121331,secondary:#242424"
+              >
+              </lord-icon>
+            </h3>
+            <ul>
+              <li>Adobe Photoshop</li>
+              <li>Adobe After Effects</li>
+              <li>Adobe Premiere Pro</li>
+              <li>Adobe Illustrator</li>
+              <li>Toon Boom Storyboard</li>
+              <li>Toon Booom Harmony</li>
+              <li>Unreal Engine</li>
+              <li>Autodesk Maya3D</li>
+              <li>Blender</li>
+            </ul>
+            <ul>
+              <h3>
+                Cybersecurity<lord-icon
+                  src="https://cdn.lordicon.com/trkmlure.json"
+                  trigger="hover"
+                  colors="primary:#242424,secondary:#242424"
+                >
+                </lord-icon>
+              </h3>
+              <li>Python</li>
+              <li>Oracle VM VirtualBox</li>
+              <li>Kali Linux</li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <h3>A bit about me</h3>
+            <p>
+              Being passionate about animation and a fresh graduate at NABA in
+              Media Design, never stopped me from expanding my knowledge and my
+              skillset. I am always up for a challenge, especially after I fell
+              in love with front end development and cybersecurity after
+              Harvard's online courses, by the amazing David J. Malan.
+            </p>
+            <p>
+              The latest challenges I took were two: the first, finishing my
+              first short animated movie, "PIERO", that revolves around Down
+              Syndrome.
+            </p>
+            <p>
+              The second, diving into 3D animation, by using the program Unreal
+              Engine 5. These are the projects I worked on.
+            </p>
+            <div>
+              <img
+                src=".\imgs\unreal_loop.gif"
+                alt="Unreal engine projects"
+                class="unreal"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--AI SECTION-->
+      <section id="ai-section" class="ai container">
+        <h2>ChatBot</h2>
+        <div class="chatbot-green">
+          <div class="chat-info">
+            <h3>Azure AI chatbot</h3>
+            <p>
+              This chatbot project is my latest coding project: it knows all my
+              skills, work experience and interests. You can chat with it to
+              know me a little bit further.
+            </p>
+            <p>It was created using Azure OpenAI 3.5 by Microsoft.</p>
+            <p>
+              It has attached my CV/Resume, but if you want a copy too, grab it
+              below! I'm looking for new projects to partake in, so if you think
+              I might be a good fit, let me know!
+            </p>
+            <a
+              href="./Caterina Viola_ITA.pdf"
+              class="button white"
+              style="align-items: center"
+              >Download Resume
+              <lord-icon
+                src="https://cdn.lordicon.com/wzwygmng.json"
+                trigger="hover"
+                colors="primary:#242424,secondary:#242424"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  margin-bottom: -7px;
+                  margin-left: 2px;
+                "
+              >
+              </lord-icon>
+            </a>
+          </div>
+          <div class="chat-box">
+            <div class="scroll-area">
+              <ul id="chat-log">
+                <li>
+                  <span class="avatar-bot">AI</span>
+                  <div class="messages">
+                    Hi! I'm Caterina Viola's friendly AI assistant, how can I
+                    help you?
+                  </div>
+                </li>
+                <li>
+                  <span class="avatar-user">User</span>
+                  <div class="messages">
+                    I have a question about this resume. Can I know more about
+                    Caterina's previous work experience?
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="chat-message">
+              <input type="text" placeholder="Ask a question" />
+              <button class="button pink">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--CONTACT FORM-->
+      <section id="contact-section" class="contact container">
+        <h2>Let's keep in touch!</h2>
+        <div class="contact-main">
+          <div class="contacts">
+            <h3>Send an email</h3>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="contact-form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="af3d2dde-c8bf-494b-bcaf-b6b814234ae8"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email address"
+              />
+              <input type="text" name="name" placeholder="Your name" />
+              <textarea
+                name="message"
+                placeholder="Say hi!"
+                class="email-text"
+              ></textarea>
+              <button type="submit" class="button white">Send</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>Alternatively</h3>
+            <p>
+              Send me an email to
+              <a href="mailto:Caterina_Viola00@proton.me"
+                >Caterina_Viola00@proton.me</a
+              >!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--FOOTER SECTION-->
+      <footer class="footer container">
+        I coded this website myself with HTML, CSS, JavaScript, React and
+        NodeJS.
+        <a href="https://lordicon.com/">Icons by Lordicon.com</a>
+      </footer>
     </main>
+
+    <!--SCRIPTS-->
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+      new kursor({
+        type: 4,
+        removeDefaultCursor: true,
+      });
+    </script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script defer src="./script.js"></script>
   </body>
 </html>
